@@ -23,15 +23,21 @@
   <h2 class="bold-text">PRINCESS.</h2>
   <p class="soft-text">Yes. You.</p>
 
-  <button class="small-btn" onclick="showCat()">click here</button>
+  <div class="button-group">
+    <button class="small-btn" onclick="showCat()">Click here</button>
+    <button onclick="goToPage(3)">Next</button>
+    <button class="back" onclick="goToPage(1)">← Back</button>
+  </div>
 
   <div id="catBox" class="hidden">
     <img src="assets/cat.png" alt="cat with flowers">
     <p class="cute-text">
-      Some beautiful (not more than u) flowers<br>
-      for <b>MY PRETTY PRINNCESS!!</b>
+      Some beautiful (not more than u) flowers💐<br>
+      for <b>MY PRETTY PRINCESS!!</b>
     </p>
   </div>
+</div>
+
 
   <button class="back" onclick="goToPage(1)">← Back</button>
   <button onclick="goToPage(3)">Next</button>
