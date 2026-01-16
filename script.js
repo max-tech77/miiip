@@ -6,11 +6,11 @@ function goToPage(pageNumber) {
   const target = document.getElementById("page" + pageNumber);
   if (target) {
     target.classList.add("active");
-    window.scrollTo(0, 0); // safety
+    window.scrollTo(0, 0);
   }
 }
 
-// Cat reveal (page 2)
+// Show cat image
 function showCat() {
   const catBox = document.getElementById("catBox");
   if (catBox.classList.contains("hidden")) {
@@ -19,7 +19,7 @@ function showCat() {
   }
 }
 
-// Envelope toggle (page 3)
+// Envelope animation (replays every click)
 function toggleEnvelope(envelope) {
   envelope.classList.remove("open");
   void envelope.offsetWidth; // reset animation
