@@ -21,5 +21,7 @@ function showCat() {
 
 // Envelope toggle (page 3)
 function toggleEnvelope(envelope) {
-  envelope.classList.toggle("open");
+  envelope.classList.remove("open");
+  void envelope.offsetWidth; // reset animation
+  envelope.classList.add("open");
 }
