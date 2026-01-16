@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Princess💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1 class="title">My Princess</h1>
+  <p class="soft-text">I forgot a word today… not the feeling.</p>
+
+  <button onclick="goToPage(2)">Click me</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h2 class="bold-text">PRINCESS.</h2>
+  <p class="soft-text">Yes. You.</p>
+
+  <button class="small-btn" onclick="showCat()">click here</button>
+
+  <div id="catBox" class="hidden">
+    <img src="assets/cat.png" alt="cat with flowers">
+    <p class="cute-text">
+      Some beautiful (not more than u) flowers<br>
+      for <b>MY PRETTY PRINNCESS!!</b>
+    </p>
+  </div>
+
+  <button class="back" onclick="goToPage(1)">← Back</button>
+  <button onclick="goToPage(3)">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h2 class="bold-text">Why are you my princess?</h2>
+
+  <div class="envelope" onclick="toggleEnvelope(this)">
+    💌 Tap to see
+    <div class="letter">Your smile, kindest action fixes my worst days.</div>
+  </div>
+
+  <div class="envelope" onclick="toggleEnvelope(this)">
+    💌 
+    <div class="letter">You are sooprettyy, cute, caring and the way u treat me and etcccc!.</div>
+  </div>
+
+  <div class="envelope" onclick="toggleEnvelope(this)">
+    💌 and
+    <div class="letter">Calling you my princess feels right'.</div>
+  </div>
+
+  <button class="back" onclick="goToPage(2)">← Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
