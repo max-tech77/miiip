@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, #fff1f6, #ffe4ee);
+  background: linear-gradient(180deg, #fff4f8, #ffe9f1);
   color: #3a003a;
 }
 
@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   padding: 40px 20px;
   text-align: center;
-  animation: fade 0.4s ease;
+  animation: fade 0.5s ease;
 }
 
 .page.active {
@@ -27,13 +27,14 @@ body {
 }
 
 .bold-text {
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .soft-text {
-  margin: 15px 0 30px;
+  margin: 15px 0 25px;
+  line-height: 1.6;
 }
 
 button {
@@ -43,7 +44,7 @@ button {
   background: #f7b7c8;
   color: #3a003a;
   font-size: 16px;
-  margin: 10px;
+  cursor: pointer;
 }
 
 .small-btn {
@@ -54,6 +55,14 @@ button {
 .back {
   background: #ffffff;
   border: 1px solid #e6a9bc;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .hidden {
@@ -69,9 +78,8 @@ button {
   background: transparent;
 }
 
-
 .cute-text {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .envelope {
@@ -95,11 +103,4 @@ button {
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-.button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
 }
